@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Store-{% block title %}</title>
     <link rel="stylesheet" href=" {% static 'styles/bootstrap.min.css' %}">
+    <link rel="stylesheet" href=" {% static 'styles/main.css' %}">
+  {% block scripts %}
+<script src="{%static'script/main.js'%}"async defer></script>
+{% endblock %}
+
 </head>
 <body>
 <button type="button" class="btn btn-primary">Primary</button>
