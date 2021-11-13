@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,11 +6,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Store-{% block title %}</title>
+    <title>Store-{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href=" {% static 'styles/bootstrap.min.css' %}">
     <link rel="stylesheet" href=" {% static 'styles/main.css' %}">
   {% block scripts %}
-<script src="{%static'script/main.js'%}"async defer></script>
+<script src="{% static 'scripts/main.js' %}"async defer></script>
 {% endblock %}
 
 </head>

@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
     Home
 {% endblock %}
 
 {% block scripts %}
-<script src="{%static'script/main.js'%}"async defer></script>
+<script src="{% static 'scripts/main.js' %}"async defer></script>
 {% endblock %}
 
 {% block container %}
